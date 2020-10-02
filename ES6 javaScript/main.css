@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+
+    }
+      nav{
+        color: rgb(238, 238, 245);
+        background-color: rgb(112, 116, 109);
+        
+        width: 100%;
+        
+        
+          
+      }
+      ul{
+        margin-top: 0px;
+      }
+        
+      
+      li{
+          display: inline-block;
+          padding: 20px;    
+       margin-right: 10px;
+       font-size: 20px;
+      }
+      
+      li:hover {
+          color: rgb(7, 6, 6);
+          background-color: rgba(236, 245, 244, 0.548);
+          padding: 20px;
+          font-weight: bold;
+          text-shadow: 5px 3px 5px;
+          
+
+
+      
+      }
+      li:active{
+        font-weight: normal;
+          text-shadow: 5px 3px 5px;
+
+
+      }

@@ -35,18 +35,63 @@ console.log("outside: " + someVar );
 
 // { last topic cover Differences Between var and let}
 
-const arry = ['Farhan', 'Waseer'];
-console.log(arry); 
-
-arry[1] = 'Ahmed';
-console.log(arry)
-
 const obj = {
-    name: 'sukkur',
-    date: '12'
-}
+    Name: 'Farhan',
+    LastName: 'Waseer',
+    Age: 20,
+    profession: {
+        one: 'React',
+        two: 'NodeJs'
+    },
+};
 
 console.log(obj)
 
-obj.date = '13'
-console.log(obj)
+console.log(obj.Name)
+console.log(obj.profession.two)
+
+ 
+ const {LastName, profession,profession: {one , two}} = obj;
+ console.log(one, two, profession )
+
+//  Arry
+
+const Arry = ['Farhan', 'Waseer', 20];
+const [firstname, lastname, age] = Arry;
+
+console.log(firstname)
+console.log(lastname)
+console.log(age)
+
+/// Class 3, 4sep 
+ 
+// Perimative data type
+// const a = 'waseer';
+// const b = 'waseer';
+// console.log(a === b)
+
+
+// ternary oprater
+
+// const a = 10;
+// const b = 20;
+// ES6
+// a < b ? console.log('If is Running') : console.log('Else is running') ;
+
+// old
+// if(a < b){
+//     console.log("If is Running")
+// }
+// else{
+//     console.log("Else is Running")
+// }
+
+// NESTED TERNARY 
+const a = 10;
+const b = 20;
+
+a < b ? 
+     a === 10 ? console.log('Nested True is running') 
+      : console.log('Nested False is running') 
+           : console.log('Parent False is running');
+     
