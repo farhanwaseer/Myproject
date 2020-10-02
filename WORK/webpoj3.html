@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>transparent navigation bar</title>
+  <style>
+    * {
+       margin: 0;
+       padding: 0;
+       font-family: verdana;
+      
+    }
+
+#logo {
+  margin-top: 7px;
+}
+
+    #main {
+      width: 100%;
+      height: 100vh;
+      background-image:  url('https://get.pxhere.com/photo/background-calm-clouds-daylight-dock-environment-grass-lake-landscape-looking-man-mountain-mountains-outdoors-person-reflections-rocks-scenery-scenic-serene-sitting-sky-tranquil-trees-view-water-wooden-woods-1563785.jpg');
+      background-size: cover;    
+    }
+
+    nav {
+      width: 100%;
+      height: 80px;
+      background-color: #0009;
+      line-height: 80px;
+    }
+    nav ul {
+      float: right;
+      margin-right: 30px;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      display: inline-block;
+      transition: 0.8s all;
+    }
+    nav ul li:hover{
+      background-color: #dad0c3;
+
+    }
+    nav ul li:active{
+      font-weight: bold;
+      text-shadow: 2px 2px 2px  #f1f1f1;
+      transition: none;
+    }
+    nav ul li a{
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      padding: 20px;
+    }   
+
+  </style>
+</head>
+<body>
+  <div id="main">
+    <nav>
+      <img id="logo" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgamepedia.cursecdn.com%2Flolesports_gamepedia_en%2Fthumb%2F4%2F45%2FPhoenix1logo_square.png%2F1200px-Phoenix1logo_square.png&f=1&nofb=1" width="100" height="60" alt="">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</body>
+</html>

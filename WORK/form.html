@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            block-size: 20px;
+        }
+        .navbar {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(65, 61, 61);
+            height: 50px;
+            word-spacing: 15px;  
+                     
+            
+        }
+     .nav2 a:hover {
+           background-color: darkgrey;
+           color: green;
+           padding: 30px;
+           
+     }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav2">
+            <a href="#">Home</a>
+            <a href="#">WIT</a>
+            <a href="#">About</a>
+            <a href="#">Contect</a>
+        </div>
+
+    </div>
+    <input type="search" placeholder="Enter" >
+    <input type="submit" value="Search" >
+    <form action="">
+       <fieldset>
+           <legend><h3>
+               Your Details
+           </h3></legend>
+        <p> <label for="name">Name:</label>
+        <input type="text" name="name" id="name"></p>
+        <label for="email">Email: </label>
+        <input type="text" id="email">
+        
+        </fieldset>  
+        <fieldset>
+            <legend>
+                <h3>Your Review:</h3>
+            </legend>
+            <p>How did you hear about us?</p>
+            <select name="list" id="">
+                <option value="goolgle">Google</option>
+                <option value="yahoo">Yahoo</option>
+                <option value="bing">Bing</option>
+            </select> 
+            <p>Would you visit again?</p>
+            <input type="radio" value="yes" checked="checked">Yes  
+            <input type="radio" value="no">No
+            <input type="radio" value="maybe">Maybe
+            <label for="comments"><h3>comments</h3></label>
+            <textarea name="comments" id="comments" cols="30" rows="5">Enter Comments</textarea>
+            <br/>
+            <input type="checkbox" checked="checked" value="emali-updates">
+            Sign me up for email emali-update
+            <br />
+            <input type="submit" value="Submit review">  
+    </form>
+    
+</body>
+</html>
