@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects 69</title>
+</head>
+<body>
+    <script>        
+        var plan1 = {
+            name: "Basic",
+            price: 3.99,
+            space: 100,
+            data: 1000,
+            pages: 10,
+            discountMonths: [6,7]
+        };
+
+        var plan2 = {
+            name: "Professional",
+            price: 5.99,
+            space: 500,
+            data: 5000,
+            pages: 50,
+            discountMonths: [6,7,11]
+        };
+
+        var plan3 = {
+            name: "Ultimate",
+            price: 9.99,
+            space: 2000,
+            data: 20000,
+            pages: 500,
+            discountMonths: [6,7],
+            calcAnnual(percentIfDisc) {
+             var bestPrice = plan1.price;
+             var currDate = new Date();
+             var thMonth = currDate.getMonth();
+             for(var i=0; i < plan1.discountMonths.length; i++){
+             if(plan1.discountMonths[i] === thMonth){
+                  bastPrice = plan1.price  * percentIfDisc;
+                  break;
+             }
+           }
+              return bastPrice * 12;
+
+          }
+       };
+       
+
+       
+        
+        
+        
+        alert("The cost of the " + plan1.name + " package is $" + plan1.price + " per month.")
+     /*   var plan1Name = "Basic";
+        var plan1Price = 3.99;
+        var plan1Space = 100;
+        var plan1Data = 1000;
+        var plan1Pages = 10;
+        var plan2Name = "Professional";
+        var plan2Price = 5.99;
+        var plan2Space = 500;
+        var plan2Data = 5000;
+        var plan2Pages = 50;
+        var plan3Name = "Ultimate";
+        var plan3Price = 9.99;
+        var plan3Space = 2000;
+        var plan3Data = 20000;
+        var plan3Pages = 500;
+
+      console.log(plan1);
+//TO check property
+
+      var checkProperty = "" in plan2;
+      console.log(checkProperty);
+      
+
+      plan1.discountMonths = [6, 7, 11];
+
+      alert("The cost of the " + plan1.name + " package is $" + plan1.price + " per month.");
+      alert("The cost of the " + plan2.name + " package is $" + plan2.price + " per month.");
+      alert("The cost of the " + plan3.name + " package is $" + plan3.price + " per month.");
+*/
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TargetElementsbyTag </title>
+</head>
+
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+
+    <script>
+        var par = document.getElementsByTagName("p");
+        console.log(par)
+
+        var textIn1stPar = par[0].innerHTML;
+        console.log(textIn1stPar);
+
+        var textIn2stPar = par[1].innerHTML;
+        console.log(textIn2stPar);
+        var textIn3stPar = par[2].innerHTML;
+        console.log(textIn3stPar);
+
+        par[1].style.color = "red";
+
+        for (i = 0; i < par.length; i++) {
+            par[i].style.fontSize = "2em";
+        }
+    </script>
+</body>
+
+</html>

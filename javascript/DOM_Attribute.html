@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Attribute</title>
+</head>
+<body>
+    <div id="p1">
+        <p class="special">
+            <img src="temp1.jpg" alt="DON" height="200px" width="300px">
+        </p>
+    </div>
+
+    <script>
+        var target = document.getElementById('p1');
+        console.log(target);
+        var hasClass = target.hasAttribute("class");
+        console.log(hasClass);
+        target.setAttribute("class","special");
+        hasClass = target.hasAttribute("class");
+        console.log(hasClass);
+
+        var divattribute = target.attributes;
+        console.log(divattribute);
+        console.log(divattribute.length);
+        var attributeName = divattribute[1].nodeName;
+        console.log(attributeName);
+        
+      // Adding Element Nodes ||
+      
+      var nodeToAdd = document.createElement('p');
+      console.log(nodeToAdd);
+      var addImage = document.createElement('img');
+
+      // Add Text Nodes
+      var paragraph = document.createTextNode("helloWorld");
+      console.log(paragraph);
+      
+
+      // Add Text Attribute
+      nodeToAdd.setAttribute("class", "regular");
+      nodeToAdd.setAttribute("src", "temp1.jpg");
+      nodeToAdd.setAttribute("border", "2");
+      
+
+
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

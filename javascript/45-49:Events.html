@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventonClick</title>
+    <style>
+        body {
+            background-color: rgb(171, 211, 212);
+        }
+        #lan {
+            padding: 15px;
+            
+        }
+    </style>
+</head>
+<body onclick="this.style.color='red';" style="margin: 0px;">
+    <h1 id="lan" onmouseover="greeting('lan jo matho');" style="background-color: blueviolet;">Events: link</h1>
+    
+   <strong> Name:</strong><br>
+    <input type="text" size="30" onFocus="this.style.backgroundColor='#f1f1f1';"onBlur="this.style.backgroundColor='white';">
+
+<form onsubmit="checkAddress('email')">
+    <strong>Email:</strong>
+    <br>
+    <input type="text"  id="email" size="30" onFocus="this.style.backgroundColor='#f1f1f1';"onBlur="this.style.backgroundColor='white';">
+     <input type="submit" value="Submit">
+</form>
+<script>
+function checkAddress(email) {
+    var val = document.getElementById(email).value;
+
+    if ( val === ""){
+        alert("Enter email Address, is required")
+    }
+}
+</script>
+<p style="font-size: 19px;" onclick="this.style.color='blueviolet'">A good website is a responsive website. The user does something—clicks a button,
+        moves the mouse, presses a key—and something happens. JavaScript gives you many ways to
+        respond to the user's needs. A few examples:
+        The user clicks a button saying "Our Guarantee" and an alert displays spelling out the
+        guarantee.
+        A page displays a "before" picture of a model. When the user mouses over the picture, it
+        is replaced by an "after" picture of her.
+        The user types a number in the Ounces field on a form. When she clicks in the Grams
+        field, the equivalent in grams displays.
+        The user has entered her email address in a form, and is about to type a comment. When
+        she moves the cursor from the email field to the comment field, JavaScript checks to see if the
+        email address is valid. In this case, it isn't—she's omitted ".com" at the end of the address. A
+        message displays letting her know that she's entered an invalid email address.
+        On an online shopping site, there's a picture of a black watch. Next to it is a drop-down
+        list asking the user to choose a color. When she chooses, the color of the watch in the picture
+        changes to that color.A good website is a responsive website. The user does something—clicks a button,
+        moves the mouse, presses a key—and something happens. JavaScript gives you many ways to
+        respond to the user's needs. A few examples:
+        The user clicks a button saying "Our Guarantee" and an alert displays spelling out the
+        guarantee.
+       
+        </p>
+        <a href="JavaScript:void(0)" onMouseover="this.style.color='green';" onclick="greeting('Hello World');"> On click Handlar</a>
+        <input type="button" value="Click" onclick="alert('hello world');" >
+        <script>
+            function greeting(text){
+              alert(text)
+            }
+          
+          
+        </script>
+</body>
+</html>

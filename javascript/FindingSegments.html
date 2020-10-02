@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindingSegments</title>
+</head>
+<body>
+    
+
+    <script>
+       
+       var text = "In World War II, the United Stats, United Kingdom, France, and Soviet Union joined forces to figth, Germany, Italy, Japan.In World War II,the large part of world destoried. "
+       var newText;
+       // Find: World War II
+       // Replace With: the Second World War
+
+       for ( var i=0; i < text.length; i++) {
+           if ( text.slice(i,i+12) === "World War II" ) {
+               newText = text.slice(0,i) + "the Second World War" + text.slice(i+12)
+
+           }
+       }
+
+       console.log(text);
+       console.log(newText);
+
+       var firstCharacter = text.indexOf("World War II");
+       var indexOfText;
+
+       console.log(firstCharacter);
+
+       if ( firstCharacter !== -1) {
+           indexOfText = text.slice(0,firstCharacter) + "the Second World War " + text.slice(firstCharacter+12)
+       }
+
+       console.log(indexOfText);
+
+       var replaceText = text.replace(/World War II/g,"the Second World War");
+       console.log(replaceText);
+
+         
+    </script>
+
+</html>
+
+
+</body>

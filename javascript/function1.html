@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function1</title>
+</head>
+<body>
+
+    <script>
+
+        function telltime () {
+           
+        var now = new Date();
+        console.log(now);
+
+        var theHr = now.getHours();
+        console.log(theHr);
+
+        var theMin = now.getMinutes();
+        console.log(theMin);
+
+        alert("Time: " + theHr + ":" +  theMin)
+        }
+
+        
+        telltime ();
+
+        function greeting(text1, text2) {
+            alert(text1)
+            alert(text2)
+        }
+     var fromUser = prompt("What is your name?")
+     var toUser = "Hello " + fromUser;
+
+
+        greeting(toUser, "lan jo Matho");
+        
+        
+    </script>
+    
+</body>
+</html>

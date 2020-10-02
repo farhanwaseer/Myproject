@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loops</title>
+</head>
+<body>
+    <script>
+             /* 
+
+      var city = prompt("Please enter your city");
+
+          var cleanestCities = ["Cheyenne", "Senta Fe", "Tucson", "Great Falls", "Honolulu"];
+          
+          var cityFlag = false;
+
+          for ( var i = 0; i <= 4; i++ ) {
+              if (city === cleanestCities[i]) {
+
+                alert("Congratulation! You live in one of the cleanest cities!")
+                  cityFlag = true;
+
+              }
+              
+          }
+
+          if (cityFlag === false) {
+              alert("Sorry, your city is not very clean!")
+          } 
+          */ 
+          
+          var city = prompt("Please enter your city");
+          console.log("User enter value: " + city);
+          
+          city = city.toUpperCase();
+          console.log("Converted to Upper Case: " + city);
+
+
+         // city = city.toLowerCase();
+          //console.log("Converted to lower Case: " + city);
+
+          var firstCharacter = city.slice(0,1);
+          console.log("First Character: " + firstCharacter);  
+
+          firstCharacter = firstCharacter.toUpperCase();
+          console.log("First Character: " + firstCharacter);
+
+          var remainingCharaters = city.slice(1);
+          console.log("Remaining Characters: " + remainingCharaters);
+          remainingCharaters = remainingCharaters.toLowerCase();
+          console.log("Remaining Characters: " + remainingCharaters);
+
+          city = firstCharacter + remainingCharaters;
+          console.log("Converted to proper case: " + city);
+          
+          var cleanestCities = ["cheyenne", "senta fe", "tucson", "great falls", "gonolulu"];
+          console.log(cleanestCities);
+
+          var cityFlag = false;
+          console.log("Default cityFlag value; " + cityFlag);
+
+          var numCities = cleanestCities.length;
+          console.log("How many objects in my array?: " + numCities);
+
+          console.log("For Loop Starting");
+
+          for ( var i = 0; i < numCities; i++ ) {
+             console.log( i + " : Now Checking " +cleanestCities[i]);
+
+          if (city === cleanestCities[i]) {
+
+             alert("Congratulation! You live in one of the cleanest cities!")
+             cityFlag = true;
+             console.log("Iteration " + i + " " + cityFlag);
+
+             break;
+
+            }
+        }
+    
+           
+           console.log("For Loop Completed");
+
+           if (cityFlag === false) {
+            alert("Sorry, your city is not very clean!")        
+           } 
+           
+           console.log("What's the value of cityFlag at the end? " + cityFlag);
+
+    </script>
+</body>
+</html>

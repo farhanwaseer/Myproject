@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SettingFeildSet</title>
+
+</head>
+
+<body>
+    <form action="">
+        ZIP:
+        <br>
+        <input type="text" id="zip" onblur="fillCity();"><br> City: <br>
+        <input type="text" id="city">
+    </form>
+    <br>
+
+    <p id="makeBig">Slow lorises are a group of several species of trepsirrhine primates which
+        make up the genus Nycticebus.<em><a href="javascript:void(0);" onclick="makeBigger();">Click for make
+                bigger</a></em></p>
+
+
+    <br>
+
+    <p id="slowLoris">Slow lorises are a group of several species of trepsirrhine primates which
+        make up the genus Nycticebus. <em><a href="javascript:void(0);" onclick="expendLoris();">Click for more</a></em>
+    </p>
+    <script>
+
+        function makeBigger() {
+            document.getElementById('makeBig').style.fontSize = "22px";
+        }
+
+        function fillCity() {
+            var zipcode = document.getElementById("zip").value;
+            var city;
+
+            switch (zipcode) {
+                case "75400":
+                    city = "karachi";
+                    break;
+                case "60608":
+                    city = "chicago";
+                case "68114":
+                    city = "omaha";
+            }
+            document.getElementById("city").value = city
+        }
+
+        function expendLoris() {
+            var expendParagraph = "Slow lorises are a group of several species of trepsirrhine primates which make up the genus Nycticebus. They have a round head, narrow snout, large eyes, and a variety ofdistinctive coloration patterns that are species-dependent. The hands and feet of slow lorises have severaladaptations that give them a pincer-like grip and enable them to grasp branches for long periods of time.Slow lorises have a toxic bite, a rare trait among mammals."
+            document.getElementById("slowLoris").innerHTML = expendParagraph;
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

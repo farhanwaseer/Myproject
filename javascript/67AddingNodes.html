@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Nodes</title>
+</head>
+
+<body>
+    <div id="wapper">
+        <p id="hello">HelloWorld</p>
+
+    </div>
+    <script>
+     // Adding Element Nodes
+     var nodeToAdd = document.createElement('p');
+     console.log(nodeToAdd);
+     var nodeImg = document.createElement('img');
+     console.log(nodeImg);
+
+    // Add Text Node
+    var paragraph = document.createTextNode('HelloWorld with JS');
+    console.log(paragraph);
+
+    // Add Atribute
+    nodeToAdd.setAttribute("class", "regular");
+    nodeImg.setAttribute("src", "temp1.jpg");
+
+
+    // Append Text to paragraph
+    nodeToAdd.appendChild(paragraph);
+
+    // Add paragraph node to div
+
+    var target = document.getElementById('wapper')
+    
+     var oldpara = target.firstChild;
+     target.insertBefore(nodeToAdd,oldpara)
+
+   /*  
+     var elementToremove = document.getElementById('hello')
+     console.log(elementToremove);
+     target.removeChild(elementToremove);
+     */    
+     
+
+    </script>
+</body>
+</html>

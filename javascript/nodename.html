@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    <h1 id="heading">Hello <h2>World</h2></h1>
+    <ul id="team"><li>Farhan Ahmed </li><li>Adil</li><li>Zai Khan</li><li></li><li></li><li></li></ul>
+    <script>
+        var parent = document.getElementById('heading');
+        console.log(parent);
+        console.log(parent.nodeType);
+        console.log(parent.nodeName.toLowerCase());
+        var target = parent.fristChild;
+        console.log(target);
+        
+     /*  var arryLi = document.getElementsByTagName('li');
+       console.log(arryLi);
+
+       var teamNum = arryLi.length;
+       console.log(teamNum);
+
+       for(i=0; i < teamNum; i++){
+           if(arryLi[i].innerHTML === ""){
+               arryLi[i].innerHTML = "ComingSoon";
+           }
+       }
+       */
+
+     /*  var parent2 = document.getElementById('team');
+       console.log(parent2);
+
+       var child = parent2.childNodes;
+       console.log(child);
+
+       var numChild = child.length;
+       console.log(numChild);
+       
+       var teamates = 0;
+       var vacancies = 0;
+       for (i=0; i < numChild; i++) {
+           if(child[i].innerHTML === ""){
+               vacancies++;
+           } else{
+               teamates++;
+           }
+       }
+
+       console.log(vacancies + " : vacancies on team now ");
+       console.log(teamates + " : are in team ");
+       */
+
+       var parent2 = document.getElementById('team');
+       console.log(parent2);
+
+       var child = parent2.childNodes;
+       console.log(child);
+
+       var numChild = child.length;
+       console.log(numChild);
+
+       var teammates = 0;
+       var vacancies = 0;
+
+       for(i=0; i < numChild; i++){
+           if(child[i].innerHTML === ""){
+               vacancies++;
+              
+           }
+           else{
+               teammates++;
+           }
+       }
+       
+       console.log(vacancies + " : vacancies on team now ");
+       console.log(teammates + " : are in team ");
+       
+             
+        
+    </script>
+</body>
+</html>
