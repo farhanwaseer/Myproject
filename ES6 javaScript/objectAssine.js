@@ -1,11 +1,26 @@
+
 let myObj1 = {
-    firstname : "Farhan"
+    firstName : 'Farhan'
 }
 
 let myObj2 = {
-    lname: 'Waseer'
+    lname : 'Ahmed'
 }
 
-let assineObj = Object.assign({}, myObj1, myObj2)
+/*
+let final = {
+    ...myObj1,
+    ...myObj2
+}
 
-console.log(assineObj)
+final.lname = 'Waseer'
+
+console.log(myObj2)
+console.log(final);
+*/
+
+ let anotherobj = Object.assign({}, myObj1, myObj2);
+ anotherobj.firstName = 'Waseer';
+ 
+ console.log(myObj1);
+ console.log(anotherobj)
