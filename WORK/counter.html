@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Document</title>
-    <script>
-        function hello() {
-            const header = document.querySelector('h1');
-            if (header.innerHTML === 'Hello!') {
-                header.innerHTML = 'Goodbye';
+    <head>
+        <title>Count</title>
+        <script>
+            function hello() {
+                const header = document.querySelector('h1');
+                if (header.innerHTML === 'Hello!') {
+                    header.innerHTML = 'Goodbye!';
+                }
+                else {
+                    header.innerHTML = 'Hello!';
+                }
             }
-            else {
-                header.innerHTML = 'Hello!';
-            }
-        }
-    </script>
-</head>
-<body>
-    <h1>Hello!</h1>
-    <button oneClick="hello()"> Click Here</button>
-</body>
+        </script>
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        <button onclick="hello()">Click Here</button>
+    </body>
 </html>
