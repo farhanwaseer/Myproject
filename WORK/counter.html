@@ -5,11 +5,17 @@
     <script>
         function hello() {
             const header = document.querySelector('h1');
+            if (header.innerHTML === 'Hello!') {
+                header.innerHTML = 'Goodbye';
+            }
+            else {
+                header.innerHTML = 'Hello!';
+            }
         }
     </script>
 </head>
 <body>
-    <h1>HELLO WORLD</h1>
+    <h1>Hello!</h1>
     <button oneClick="hello()"> Click Here</button>
 </body>
 </html>
