@@ -13,4 +13,4 @@ function getPost() {
     }, 2000)
 }
 
-getPost
+getPost();
