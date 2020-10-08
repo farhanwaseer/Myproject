@@ -6,9 +6,11 @@ const posts = [
 function getPost() {
     let output = '';
     setTimeout(() => {
-        posts.forEach(post => ) {
+        posts.forEach(post =>  {
             output += `<li>${post.title}</li>`
-            document.body.innerHTML = output;
-        }
+            document.body.innerHTML = output; 
+        })
     }, 2000)
 }
+
+getPost
