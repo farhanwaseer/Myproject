@@ -7,7 +7,7 @@ function getPosts() {
     let output = '';
     setTimeout(() => {
         posts.forEach(post =>  {
-            output += `<li>${post.title}</li>
+            output += `<li>${post.title} ${post.body} </li>
             <h1>FARHAN WASEER</h1>`
             document.body.innerHTML = output; 
         })
