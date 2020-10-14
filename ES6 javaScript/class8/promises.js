@@ -1,4 +1,4 @@
-const posts = [
+/*const posts = [
     { title: 'Post one ', body: 'This is post one ' },
     { title: 'Post two', body: 'This is post two' }
 ];
@@ -43,6 +43,6 @@ createPost({ title: 'Post three', body: 'This is post three' })
     .then((val) => console.log(val))
     .catch(err => console.log(err));
 
+*/
 
-
-
+fetch('https://jsonplaceholder.typicode.com/posts')
