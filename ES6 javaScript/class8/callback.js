@@ -8,7 +8,7 @@ function getPosts() {
     let output = '';
     setTimeout(() => {
 
-        posts.forEach((post, index) => {
+        posts.forEach((post) => {
             output += `<li>${post.title} ${post.body}</li>
             <h1>Farhan Waseer</h1>`;
             document.body.innerHTML = output;
@@ -19,11 +19,11 @@ function getPosts() {
 
 
 function createPost(post, callback) {
-
     setTimeout((abc) => {
 
         posts.push(post);
         callback();
+    
     }, 2000);
 }
 
