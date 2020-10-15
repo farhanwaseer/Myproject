@@ -47,6 +47,6 @@ createPost({ title: 'Post three', body: 'This is post three' })
 
 fetch('https://jsonplaceholder.typicode.com/posts')
 .then(response => {
-    response.json()
+    console.log(response.json())
 })
 .catch(err => console.log(err));
