@@ -3,6 +3,7 @@ const posts = [
     { title: 'Post two', body: 'This is post two' }
 ];
 
+
 function getPosts() {
     let output = '';
     setTimeout(() => {
@@ -33,6 +34,14 @@ function createPost(post) {
 
 // async / await 
  
+// async function init() {
+//     await createPost({ title: 'Post three', body: 'This is post three' });
+
+//     getPosts();
+// }
+
+// init();
+
 async function init() {
     await createPost({ title: 'Post three', body: 'This is post three' });
 
@@ -40,6 +49,22 @@ async function init() {
 }
 
 init();
+
+
+// Async Await with fetch
+
+async function fetchUsers() {
+    const res = await
+     fetch ('https://jsonplaceholder.typicode.com/users');
+    
+    var data = await res.json();
+    console.log(data);
+
+}
+
+fetchUsers();
+
+
 // const promise1 = Promise.resolve('Hello world');
 // const promise2 = 10;
 // const promise3 = new Promise((resolve, reject) => 
