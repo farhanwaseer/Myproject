@@ -1,29 +1,33 @@
 //  Currency Api 
 
-document.addEventListener('DOMContentLoaded', function(){
+document.querySelector('form').onsubmit = function() {
 
-    document.querySelector('form').onsubmit = function() {
-        
-        fetch('https://api.exchangeratesapi.io/latest?base=USD')
+    // Send a GET request to the URL
+    fetch('https://api.exchangeratesapi.io/latest?base=USD')
+    // Put response into json form
     .then(response => response.json())
     .then(data => {
-        console.log(data);
-        const currency = document.querySelector('#currency').value;
+        // Get currency from user input and convert to upper case
+        const currency = document.querySelector('#currency').value.toUpperCase();
+
+        // Get rate from data
         const rate = data.rates[currency];
-             if(rate !== undefined){
-                 document.querySelector('#result').innerHTML = `<h2>1 USD is equal to ${rate.toFixed(3)} EUR.</h2>`;  
 
-             }else{
-                document.querySelector('#result').innerHTML = 'Invalid Currency';
-             }
+        // Check if currency is valid:
+        if (rate !== undefined) {
+            // Display exchange on the screen
+            document.querySelector('#result').innerHTML = `1 USD is equal to ${rate.toFixed(3)} ${currency}.`;
+        }
+        else {
+            // Display error on the screen
+            document.querySelector('#result').innerHTML = 'Invalid Currency.';
+        }
     })
-
+    // Catch any errors and log them to the console
     .catch(error => {
-     console.log('Error:', error);
-       
+        console.log('Error:', error);
     });
-
-        return false;
-    }
-    
+    // Prevent default submission
+    return false;
+}
 });
