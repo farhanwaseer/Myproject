@@ -29,8 +29,14 @@ class Dealer extends Car {
         this.name = name;
         this.address = address;
     }
+
+    static value = "some static value";
+
 }
 
 const dealer1 = new Dealer('Haseeb Motors', 'KHI', 'GLI', 1300, 'Grey', 2020);
 
 console.log(dealer1);
+dealer1.carColor();
+
+console.log(Dealer.value);
