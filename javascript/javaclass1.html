@@ -12,6 +12,13 @@
     
     <script src="counter.js">  
     </script>
-  
+  <script >
+    const teachers = ['Zia Khan', 'Irfan', 'Muneeb', 'Aamir']
+    const titles = teachers.map( name => 'Mr.' + name)
+
+    document.body.querySelector('h1').innerHTML = `${titles}`
+
+</script>
+
 </body>
 </html>
