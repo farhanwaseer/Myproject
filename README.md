@@ -8,4 +8,6 @@ sdcsdcsdk;mc;ksdm;kcm;skmdc;kmsd;kcm
 sdcsdmc;lmsd;lcmc;skdmc;km
 dcmsndklcmsdklmc/kl
 dcksdmc;ksmd;ckm
+sdclmslmdcl
+  ;dlmcs;ldmc; sdc ;s dc;ksd;kc;ks;kdc
 dcs,dc skdmc;kmsd;kcms;kmdc;smd
